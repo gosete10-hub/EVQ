@@ -1,0 +1,24 @@
+[project]
+name = "consulta-de-datos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "gerardosete", email = "gerard.osete@holisticds.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.5",
+    "httpx>=0.28.1",
+    "openai>=3.49.0",
+    "pandas>=3.1.1",
+    "pydantic>=2.14.3",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+consulta-de-datos = "consulta_de_datos:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
